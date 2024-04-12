@@ -7,4 +7,4 @@ cd /how2heap
 
 git fetch origin $REF:ci_test
 git checkout ci_test
-make test target=2.23
+make
