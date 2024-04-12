@@ -1,5 +1,7 @@
 #!/bin/sh
 
-echo "cool!"
+git clone https://github.com/shellphish/how2heap /how2heap
 
-exit 1
+cd /how2heap
+
+make test target=2.23
