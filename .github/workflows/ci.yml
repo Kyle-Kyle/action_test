@@ -15,4 +15,4 @@ jobs:
       - name: system prep
         run: |
           docker pull ubuntu:16.04
-          docker tag ubuntu16.04 base
+          docker tag ubuntu:16.04 base
