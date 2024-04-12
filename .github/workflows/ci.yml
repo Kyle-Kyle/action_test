@@ -13,10 +13,14 @@ jobs:
     name: glibc-v2.23
     steps:
       - name: build how2heap
-        uses: Kyle-Kyle/action_test/ci/build.yml@main
+        uses: Kyle-Kyle/action_test/ci/build@main
+      - name: test how2heap
+        uses: Kyle-Kyle/action_test/ci/test@main
   v2_31:
     runs-on: ubuntu-20.04
     name: glibc-v2.31
     steps:
       - name: build how2heap
-        uses: Kyle-Kyle/action_test/ci/build.yml@main
+        uses: Kyle-Kyle/action_test/ci/build@main
+      - name: test how2heap
+        uses: Kyle-Kyle/action_test/ci/test@main
