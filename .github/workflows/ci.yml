@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: build how2heap
         uses: Kyle-Kyle/action_test/ci/build@main
+        with:
+          ubuntu-version: '16.04'
       - name: test how2heap
         uses: Kyle-Kyle/action_test/ci/test@main
   v2_31:
