@@ -10,7 +10,7 @@ on:
 jobs:
   v2_23:
     runs-on: ubuntu-20.04
-    name: test
+    name: glibc-v2.23
     steps:
       - name: test how2heap on glibc-2.23
         uses: Kyle-Kyle/action_test/ci@main

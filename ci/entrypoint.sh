@@ -1,5 +1,6 @@
 #!/bin/sh
 
+echo ${GITHUB_REF##*/}
 git clone https://github.com/shellphish/how2heap /how2heap
 
 cd /how2heap
