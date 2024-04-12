@@ -18,3 +18,4 @@ runs:
         docker clone https://github.com/Kyle-Kyle/action_test /action_test
         cd /action_test/ci/build && docker build -t runner .
         mkdir /how2heap && docker run -v /how2heap:/how2heap runner
+      shell: bash
