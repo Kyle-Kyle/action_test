@@ -14,7 +14,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: Kyle-Kyle/action_test/hello-world-docker-action@master
+        uses: Kyle-Kyle/action_test@master
         with:
           who-to-greet: 'Mona the Octocat'
       # Use the output from the `hello` step
