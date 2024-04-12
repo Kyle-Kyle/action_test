@@ -9,20 +9,14 @@ on:
 
 jobs:
   v2_23:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     name: glibc-v2.23
     steps:
-      - name: test how2heap on glibc-2.23
-        uses: Kyle-Kyle/action_test/ci/2.23@main
-  v2_24:
-    runs-on: ubuntu-20.04
-    name: glibc-v2.24
-    steps:
-      - name: test how2heap on glibc-2.24
-        uses: Kyle-Kyle/action_test/ci/2.24@main
+      - name: build how2heap
+        uses: Kyle-Kyle/action_test/ci/build.yml@main
   v2_31:
     runs-on: ubuntu-20.04
     name: glibc-v2.31
     steps:
-      - name: test how2heap on glibc-2.31
-        uses: Kyle-Kyle/action_test/ci/2.31@main
+      - name: build how2heap
+        uses: Kyle-Kyle/action_test/ci/build.yml@main
