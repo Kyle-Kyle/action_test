@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-22.04
     name: glibc-v2.23
     steps:
-      - name: system prep
-        run: |
-          docker pull ubuntu:16.04
-          docker tag ubuntu:16.04 base
+      - name: build how2heap
+        uses: Kyle-Kyle/action_test/ci/build@main
+        with:
+          ubuntu-version: '16.04'

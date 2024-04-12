@@ -5,7 +5,10 @@ inputs:
     description: 'build it on which ubuntu version'
     required: true
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
-  args:
-    - ${{ inputs.ubuntu-version }}
+  using: "composite"
+  steps:
+    - name: create the base docker image
+      run: |
+        docker pull ubuntu:${{ inputs.ubuntu-version }}
+        docker tag ubuntu:${{ inputs.ubuntu-version }} base
+      shell: bash
