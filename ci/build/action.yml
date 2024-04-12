@@ -12,3 +12,9 @@ runs:
         docker pull ubuntu:${{ inputs.ubuntu-version }}
         docker tag ubuntu:${{ inputs.ubuntu-version }} base
       shell: bash
+
+    - name: build how2heap inside the base container
+      run: |
+        docker clone https://github.com/Kyle-Kyle/action_test /action_test
+        cd /action_test/ci/build && docker build -t runner .
+        mkdir /how2heap && docker run -v /how2heap:/how2heap runner
