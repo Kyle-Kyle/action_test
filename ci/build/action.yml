@@ -9,8 +9,8 @@ runs:
   steps:
     - name: create the base docker image
       run: |
-        docker pull ubuntu:${{ inputs.ubuntu-version }}
-        docker tag ubuntu:${{ inputs.ubuntu-version }} base
+        docker pull ubuntu:${{ inputs.ubuntu }}
+        docker tag ubuntu:${{ inputs.ubuntu }} base
       shell: bash
 
     - name: build how2heap inside the base container
