@@ -15,7 +15,7 @@ runs:
 
     - name: build how2heap inside the base container
       run: |
-        git clone  https://github.com/Kyle-Kyle/action_test /tmp/how2heap
+        git clone https://github.com/Kyle-Kyle/action_test.git /tmp/how2heap
         git fetch origin ${GITHUB_REF}:action
         git switch action
         cd /tmp/how2heap/ci/build && docker build -t runner .
