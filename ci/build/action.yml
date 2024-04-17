@@ -16,6 +16,6 @@ runs:
     - name: build how2heap inside the base container
       run: |
         git clone --depth 1 https://github.com/Kyle-Kyle/action_test /tmp/how2heap
-        cd /how2heap/ci/build && docker build -t runner .
-        docker run -v /how2heap:/how2heap runner
+        cd /tmp/how2heap/ci/build && docker build -t runner .
+        docker run -v /tmp/how2heap:/how2heap runner
       shell: bash
