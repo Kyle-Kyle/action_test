@@ -1,8 +1,11 @@
 name: 'test how2heap'
 description: 'test how2heap on the targeted ubuntu docker'
 inputs:
-  ubuntu-version:
+  ubuntu:
     description: 'build it on which ubuntu version'
+    required: true
+  glibc:
+    description: 'test against which glibc'
     required: true
 runs:
   using: "composite"
